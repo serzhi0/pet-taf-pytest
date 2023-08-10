@@ -1,0 +1,12 @@
+{
+    "base_url": "https://automationteststore.com/",
+    "trace_dir": "failed-traces/",
+    "context_params": {
+        "no_viewport": "True",
+        "geolocation": {
+            "latitude": 43.00465100450114,
+            "longitude": -108.92918754518419},
+        "permissions": ["geolocation"],
+        "locale": "en_US"
+    }
+}
