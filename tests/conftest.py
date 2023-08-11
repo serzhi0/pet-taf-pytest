@@ -45,7 +45,7 @@ def pytest_runtest_makereport(item, call):
         xfail = hasattr(report, "wasxfail")
         if (report.skipped and xfail) or (report.failed and not xfail):
             link = f'https://trace.playwright.dev/?trace={TRACE_DIR}{item.name}.zip'
-            extra.append(pytest_html.extras.url(link))
+            extra.append(pytest_html.extras.url(link, name='View Trace'))
         report.extra = extra
 
 # extras.url(f'{item.name}.zip', name='View Trace'))
